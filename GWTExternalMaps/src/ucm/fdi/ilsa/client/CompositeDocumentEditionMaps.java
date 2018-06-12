@@ -74,6 +74,7 @@ public class CompositeDocumentEditionMaps {
 	private ButtonStruc Actual;
 	private VerticalPanel VPpanel;
 	private StructureJSON SuperS;
+	private int Width;
 
 	private static GoogleMap Nulo=null;
 	
@@ -90,6 +91,17 @@ public class CompositeDocumentEditionMaps {
 		Disponibles=new ArrayList<ButtonStruc>();
 		
 		getPosition();
+		
+		
+		Width=Window.getClientWidth();
+		
+		
+		
+		int Variacion=315;
+
+		if (Width>515)
+			Width=Width-Variacion;
+		
 		
 	com.google.gwt.user.client.ui.RootPanel RP=com.google.gwt.user.client.ui.RootPanel.get(RandomIdVars);
 		
@@ -123,7 +135,7 @@ public class CompositeDocumentEditionMaps {
 		
 		if (Grammar)
 			{
-			setError();
+		ErrorLab();
 			return;
 			}
 		
@@ -163,7 +175,7 @@ public class CompositeDocumentEditionMaps {
 			}
 		else
 		{
-			setError();
+			ErrorLab();
 			return;
 		}
 		
@@ -225,13 +237,13 @@ public class CompositeDocumentEditionMaps {
 		
 		if (S==null)
 			{
-			setError();
+			ErrorLab();
 			return;
 			}
 		
 		
 		VerticalPanel ListaV=new VerticalPanel();
-		ListaV.setSize("100%", "100%");
+		ListaV.setSize(Width+"px", "100%");
 		PanelPrincipal.add(ListaV);
 		
 		VerticalPanel Glue=new VerticalPanel();
@@ -325,7 +337,7 @@ public class CompositeDocumentEditionMaps {
 		
 		if (S==null)
 			{
-			setError();
+			ErrorLab();
 			return;
 			}
 		
@@ -346,7 +358,7 @@ public class CompositeDocumentEditionMaps {
 		GWT.log(lista.size()+"");
 		
 		VerticalPanel Vertila=new VerticalPanel();
-		Vertila.setWidth("100%");
+		Vertila.setWidth(Width+"px");
 		PanelPrincipal.add(Vertila);
 		
 		VerticalPanel Glue=new VerticalPanel();
@@ -633,7 +645,7 @@ public class CompositeDocumentEditionMaps {
 		return encontradoLat&&encontradoLong;
 	}
 
-	private void setError() {
+	private void ErrorLab() {
 		PanelPrincipal.add(new Label(ERROR_GRAMMAR));
 		
 	}
