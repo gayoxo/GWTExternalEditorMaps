@@ -5,7 +5,7 @@
          version="2.5"
          xmlns="http://java.sun.com/xml/ns/javaee">
 
-  <!-- Servlets -->
+  <!-- Servlets
   <servlet>
     <servlet-name>greetServlet</servlet-name>
     <servlet-class>ucm.fdi.ilsa.server.GreetingServiceImpl</servlet-class>
@@ -15,7 +15,8 @@
     <servlet-name>greetServlet</servlet-name>
     <url-pattern>/gwtexternalmaps/greet</url-pattern>
   </servlet-mapping>
-  
+   -->
+   
   <!-- Default page to serve -->
   <welcome-file-list>
     <welcome-file>GWTExternalMaps.html</welcome-file>
