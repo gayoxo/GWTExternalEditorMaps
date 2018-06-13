@@ -473,7 +473,7 @@ public class CompositeDocumentEditionMaps {
 			
 			@Override
 			public void onClick(ClickEvent event) {
-				createIterator(Long.toString(ContextId),Long.toString(Documento.getDocumento().getId()),"gmaps",false);
+				createIterator(Long.toString(ContextId),Long.toString(Documento.getDocumento().getId()),"gmaps2",false);
 //				ControladorEditor.createIteration(Long.toString(ContextId),Long.toString(Documento.getDocumento().getId()),"gmaps",false);
 				
 			}
@@ -528,7 +528,7 @@ public class CompositeDocumentEditionMaps {
 		}
 		
 		
-		moveDOWN(Long.toString(ContextId),Long.toString(Siguiente.getStructElem().getId().get(0)),Long.toString(Buscar.getStructElem().getId().get(0)),Long.toString(Documento.getDocumento().getId()),"gmaps",false);
+		moveDOWN(Long.toString(ContextId),Long.toString(Siguiente.getStructElem().getId().get(0)),Long.toString(Buscar.getStructElem().getId().get(0)),Long.toString(Documento.getDocumento().getId()),"gmaps2",false);
 //		ControladorEditor.moveDOWN(Long.toString(ContextId),Long.toString(Siguiente.getStructElem().getId().get(0)),Long.toString(Buscar.getStructElem().getId().get(0)),Long.toString(Documento.getDocumento().getId()),"gmaps",false);
 
 		
@@ -551,7 +551,7 @@ public class CompositeDocumentEditionMaps {
 			return;
 		}
 		
-		moveUP(Long.toString(ContextId),Long.toString(Anterior.getStructElem().getId().get(0)),Long.toString(Buscar.getStructElem().getId().get(0)),Long.toString(Documento.getDocumento().getId()),"gmaps",false);
+		moveUP(Long.toString(ContextId),Long.toString(Anterior.getStructElem().getId().get(0)),Long.toString(Buscar.getStructElem().getId().get(0)),Long.toString(Documento.getDocumento().getId()),"gmaps2",false);
 		
 //		ControladorEditor.moveUP(Long.toString(ContextId),Long.toString(Anterior.getStructElem().getId().get(0)),Long.toString(Buscar.getStructElem().getId().get(0)),Long.toString(Documento.getDocumento().getId()),"gmaps",false);
 		

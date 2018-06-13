@@ -29,6 +29,8 @@ public class GWTExternalMaps implements EntryPoint {
     	$wnd.GMapsSetContext = @ucm.fdi.ilsa.client.GWTExternalMaps::setContext(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZZZ)
     	$wnd.GMapsGetIcon = @ucm.fdi.ilsa.client.GWTExternalMaps::getIcon()
     	$wnd.GMapsPersist = @ucm.fdi.ilsa.client.GWTExternalMaps::getPersist()
+    	$wnd.GMapsisWaitingUpdate = @ucm.fdi.ilsa.client.GWTExternalMaps::isWaitingUpdate()
+    	$wnd.GMapsupdateContext = @ucm.fdi.ilsa.client.GWTExternalMaps::updateContext()
     	
     }-*/;
 
@@ -75,5 +77,18 @@ public class GWTExternalMaps implements EntryPoint {
 	public void onModuleLoad() {
 		GWT.log("Maps Load");
 		
+	}
+	
+	
+
+	public static boolean isWaitingUpdate() {
+		return false;
+	}
+
+
+
+
+	public static boolean updateContext() {
+		return true;
 	}
 }
