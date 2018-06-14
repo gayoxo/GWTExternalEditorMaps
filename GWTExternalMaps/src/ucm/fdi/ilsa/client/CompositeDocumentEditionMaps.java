@@ -630,7 +630,7 @@ public class CompositeDocumentEditionMaps {
 				if (hijos.getTypeOfStructure()==TypeOfStructureEnum.Text)
 					for (OperationalValueTypeJSON ov : hijos.getShows()) {
 						if (ov.getView().toLowerCase().equals("clavy"))
-							if (ov.getName().toLowerCase().equals("gmaps")||ov.getDefault().toLowerCase().equals("gmaps2"))
+							if (ov.getName().toLowerCase().equals("gmaps"))
 								{
 								
 								if (ov.getDefault().toLowerCase().equals("latitude"))

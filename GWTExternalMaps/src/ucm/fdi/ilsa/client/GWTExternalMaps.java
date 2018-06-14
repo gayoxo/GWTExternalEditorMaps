@@ -31,6 +31,7 @@ public class GWTExternalMaps implements EntryPoint {
     	$wnd.GMapsPersist = @ucm.fdi.ilsa.client.GWTExternalMaps::getPersist()
     	$wnd.GMapsisWaitingUpdate = @ucm.fdi.ilsa.client.GWTExternalMaps::isWaitingUpdate()
     	$wnd.GMapsupdateContext = @ucm.fdi.ilsa.client.GWTExternalMaps::updateContext()
+    	$wnd.GMapssetWaitingUpdate = @ucm.fdi.ilsa.client.GWTExternalMaps::setWaitingUpdate(Z)
     	
     }-*/;
 
@@ -85,6 +86,9 @@ public class GWTExternalMaps implements EntryPoint {
 		return false;
 	}
 
+	  public static void setWaitingUpdate(boolean update) {
+	    	//NOTHIG TO DO
+	    }
 
 
 
